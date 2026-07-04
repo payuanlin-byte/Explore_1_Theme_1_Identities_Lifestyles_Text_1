@@ -80,7 +80,7 @@
             z-index: 1000;
             font-size: 18px;
             animation: fadeIn 0.2s ease-out;
-            pointer-events: none; /* 防止遮擋點擊 */
+            pointer-events: none;
         }
         .pinyin { color: #4CAF50; font-weight: bold; margin-bottom: 5px; font-size: 20px;}
         .english { color: #FFFFFF; font-size: 16px;}
@@ -118,10 +118,9 @@
     <h1>＜課文一＞ 靠臉吃飯</h1>
     <div class="meta-info">2018年9月8日 | 星期天 | 晴</div>
     
-    <!-- 音頻播放器 -->
     <div style="text-align: center; margin-bottom: 30px;">
         <audio controls style="width: 80%; outline: none; border-radius: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-            <source src="audio.mp3" type="audio/mpeg">
+            <source src="kewen1_kaolianchifan.mp3" type="audio/mpeg">
             您的瀏覽器不支持播放音頻。
         </audio>
     </div>
@@ -138,7 +137,6 @@
 
     <p>我認為作為年輕人，我們要<span class="vocab vocab-blue" data-pinyin="jī jí" data-eng="actively">積極</span><span class="vocab vocab-blue" data-pinyin="jiē shòu" data-eng="to accept">接受</span>新生活方式的改變。這個<span class="vocab vocab-blue" data-pinyin="shí dài" data-eng="era">時代</span>，最可怕的不是那些不願<span class="vocab vocab-blue" data-pinyin="jiē shòu" data-eng="to accept">接受</span><span class="vocab vocab-blue" data-pinyin="chuàng xīn" data-eng="innovation">創新</span>的人，而是不願改變的人，明明手機可以<span class="vocab vocab-blue" data-pinyin="zhuǎn zhàng" data-eng="to transfer money">轉賬</span>，<span class="vocab vocab-blue" data-pinyin="piān yào" data-eng="to insist on">偏要</span>去銀行拿號碼排隊；明明手機可以<span class="vocab vocab-blue" data-pinyin="zhī fù" data-eng="to pay">支付</span>，<span class="vocab vocab-blue" data-pinyin="piān yào" data-eng="to insist on">偏要</span>用現金讓別人找零錢；明明手機可以買票，<span class="vocab vocab-blue" data-pinyin="piān yào" data-eng="to insist on">偏要</span>去火車站排隊。</p>
 
-    <!-- 輸出閉環：口語任務 -->
     <div class="task-box">
         <h3>🗣️ 即時挑戰 (Speaking Challenge)</h3>
         <p style="font-size: 16px; text-indent: 0; color: #555;">讀完文章後，請挑選 <strong>1 個紅色的邏輯連詞</strong> 和 <strong>2 個藍色/綠色的詞彙</strong>，造一個完整的句子。例如：</p>
@@ -148,7 +146,6 @@
     </div>
 </div>
 
-<!-- 用於顯示拼音和英文的動態彈窗 -->
 <div id="tooltip">
     <div class="pinyin" id="tt-pinyin"></div>
     <div class="english" id="tt-english"></div>
